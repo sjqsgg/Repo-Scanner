@@ -1,0 +1,16 @@
+[
+  {
+    "commit_hash": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+    "file_path": "config/settings.py",
+    "line_snippet": "STRIPE_API_KEY = \"sk_live_...thisisverysecret...\"",
+    "finding_type": "API Key",
+    "rationale": "This line contains a string prefixed with 'sk_live_', characteristic of a Stripe live API key, which is highly sensitive."
+  },
+  {
+    "commit_hash": "f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8e9",
+    "file_path": "deploy/prod.yml",
+    "line_snippet": "  DB_PASSWORD: \"MySuperSecurePassword!@#123\"",
+    "finding_type": "Password",
+    "rationale": "This line explicitly defines a database password in plaintext within a configuration file."
+  }
+]
