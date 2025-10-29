@@ -19,7 +19,7 @@ This is a Python tool that scans the last N commits of a local Git repository fo
 ### 2. Installation & Dependencies
 
 1.  **Clone or Download:**
-    Place the Python script (e.g., `scan.py`) in a directory.
+    Clone the whole scanner repository to your laptop, Or download the Python script (`secret_scanner.py`) in a directory.
 
 2.  **Install Required Python Libraries:**
     This script relies on `GitPython`, `requests`, and `python-dotenv`. You can install them using pip:
